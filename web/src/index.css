@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css2?family=El+Messiri:wght@100;200;300;400;500;600;700&display=swap);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* tailwind font-face */
+@font-face {
+  font-family: "Chinese Rocks";
+  src: url(assets/chineserocks.otf);
+}
+
+
+* {
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Chinese Rocks";
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  overflow: hidden;
+}
+
+:root {
+  height: 100%;
+  --color-primary: rgb(17, 201, 247);
+  --color-primary-content: #ecf0f1;
+  --color-primary-opacity: rgba(17, 201, 247, 0.2);
+
+  --color-secondary: rgb(17, 201, 247);
+  --color-secondary-content: #ecf0f1;
+  --color-secondary-opacity: rgba(17, 201, 247, 0.2);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* Navigation Arrow Customization */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f2c82e !important; /* Arrow color */
+  transition: color 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #ebbf2e; /* Change on hover */
+}
+
+
+.swiper-pagination-bullet {
+  background: url(assets/swiperpagination.png) !important;
+  background-size: cover;
+  width: 15px !important;
+  height: 15px !important;
+  opacity: 100% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: url(assets/activenav.png) !important;
+  background-size: cover !important;
+}
+
+.swiper-pagination {
+
+}
+
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #1d1b1b;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #cdb593, #938168);
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d9a768, #b3935a);
+}
+
+.bg-size-full {
+  background-size: 100% 100% !important;
+}
+
+
+input {
+  background-color: transparent;
+  color: #ffffffa9;
+  
+}
+
+::placeholder {
+  color: #ffffffa9;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(50%) sepia(100%) saturate(50%) hue-rotate(10deg);
+  -webkit-filter: invert(50%) sepia(100%) saturate(50%) hue-rotate(10deg);
+}
